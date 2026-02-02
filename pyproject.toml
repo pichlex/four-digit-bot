@@ -1,0 +1,19 @@
+[project]
+name = "four-digit-bot"
+version = "0.1.0"
+description = "Telegram bot that issues unique 4-digit codes with import/export and whitelist"
+authors = [{name = ""}]
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.3,<4",
+    "aiosqlite>=0.19",
+    "pydantic>=2.5",
+    "pydantic-settings>=2.1",
+]
+
+[project.scripts]
+four-digit-bot = "four_digit_bot.main:run"
+
+[build-system]
+requires = ["setuptools>=62"]
+build-backend = "setuptools.build_meta"
